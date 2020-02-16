@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="db303993-9253-4744-801e-870bd0ab1cfc" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/PyTunes" />
+  </component>
+  <component name="ProjectId" id="1XicWvsVll4syf4HcQNq2771rz8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/foglamp_workspace/foglamp-south-coral-people" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager" selected="Python.qt_try">
+    <configuration name="GUI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="open_vino_udacity" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lazy_Change" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lazy_Change/GUI.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Lazy_Change" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="open_vino_udacity" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lazy_Change" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lazy_Change/Lazy_Change.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="lazy_change (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="open_vino_udacity" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lazy_change" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lazy_change/lazy_change.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="qt_try" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="open_vino_udacity" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lazy_Change" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lazy_Change/qt_try.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="try_cv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="open_vino_udacity" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lazy_Change" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lazy_Change/try_cv.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.qt_try" />
+        <item itemvalue="Python.Lazy_Change" />
+        <item itemvalue="Python.try_cv" />
+        <item itemvalue="Python.GUI" />
+        <item itemvalue="Python.lazy_change (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="db303993-9253-4744-801e-870bd0ab1cfc" name="Default Changelist" comment="" />
+      <created>1581532391932</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581532391932</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="308" y="27" width="800" height="637" key="#Notifications" timestamp="1581532629043">
+      <screen x="67" y="27" width="1293" height="637" />
+    </state>
+    <state x="308" y="27" width="800" height="637" key="#Notifications/67.27.1293.637@67.27.1293.637" timestamp="1581532629043" />
+    <state x="171" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581533479016">
+      <screen x="67" y="27" width="1293" height="637" />
+    </state>
+    <state x="171" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1293.637@67.27.1293.637" timestamp="1581533479016" />
+    <state x="496" y="103" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581671864257">
+      <screen x="67" y="27" width="1293" height="637" />
+    </state>
+    <state x="496" y="103" width="424" height="484" key="FileChooserDialogImpl/67.27.1293.637@67.27.1293.637" timestamp="1581671864257" />
+    <state width="1270" height="140" key="GridCell.Tab.0.bottom" timestamp="1581874839693">
+      <screen x="67" y="27" width="1293" height="637" />
+    </state>
+    <state width="1270" height="140" key="GridCell.Tab.0.bottom/67.27.1293.637@67.27.1293.637" timestamp="1581874839693" />
+    <state width="1270" height="140" key="GridCell.Tab.0.center" timestamp="1581874839692">
+      <screen x="67" y="27" width="1293" height="637" />
+    </state>
+    <state width="1270" height="140" key="GridCell.Tab.0.center/67.27.1293.637@67.27.1293.637" timestamp="1581874839692" />
+    <state width="1270" height="140" key="GridCell.Tab.0.left" timestamp="1581874839692">
+      <screen x="67" y="27" width="1293" height="637" />
+    </state>
+    <state width="1270" height="140" key="GridCell.Tab.0.left/67.27.1293.637@67.27.1293.637" timestamp="1581874839692" />
+    <state width="1270" height="140" key="GridCell.Tab.0.right" timestamp="1581874839692">
+      <screen x="67" y="27" width="1293" height="637" />
+    </state>
+    <state width="1270" height="140" key="GridCell.Tab.0.right/67.27.1293.637@67.27.1293.637" timestamp="1581874839692" />
+    <state width="1247" height="176" key="GridCell.Tab.1.bottom" timestamp="1581802432930">
+      <screen x="67" y="27" width="1293" height="637" />
+    </state>
+    <state width="1247" height="176" key="GridCell.Tab.1.bottom/67.27.1293.637@67.27.1293.637" timestamp="1581802432930" />
+    <state width="1247" height="176" key="GridCell.Tab.1.center" timestamp="1581802432929">
+      <screen x="67" y="27" width="1293" height="637" />
+    </state>
+    <state width="1247" height="176" key="GridCell.Tab.1.center/67.27.1293.637@67.27.1293.637" timestamp="1581802432929" />
+    <state width="1247" height="176" key="GridCell.Tab.1.left" timestamp="1581802432927">
+      <screen x="67" y="27" width="1293" height="637" />
+    </state>
+    <state width="1247" height="176" key="GridCell.Tab.1.left/67.27.1293.637@67.27.1293.637" timestamp="1581802432927" />
+    <state width="1247" height="176" key="GridCell.Tab.1.right" timestamp="1581802432930">
+      <screen x="67" y="27" width="1293" height="637" />
+    </state>
+    <state width="1247" height="176" key="GridCell.Tab.1.right/67.27.1293.637@67.27.1293.637" timestamp="1581802432930" />
+    <state x="202" y="27" width="1012" height="637" key="SettingsEditor" timestamp="1581533335490">
+      <screen x="67" y="27" width="1293" height="637" />
+    </state>
+    <state x="202" y="27" width="1012" height="637" key="SettingsEditor/67.27.1293.637@67.27.1293.637" timestamp="1581533335490" />
+    <state x="481" y="265" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581536517640">
+      <screen x="67" y="27" width="1293" height="637" />
+    </state>
+    <state x="481" y="265" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1293.637@67.27.1293.637" timestamp="1581536517640" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Lazy_Change/GUI.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
