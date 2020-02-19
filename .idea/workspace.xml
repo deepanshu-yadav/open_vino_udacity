@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db303993-9253-4744-801e-870bd0ab1cfc" name="Default Changelist" comment="" />
+    <list default="true" id="db303993-9253-4744-801e-870bd0ab1cfc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lazy_Change/GUI.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lazy_Change/Lazy_Change.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lazy_Change/Lazy_Change.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lazy_Change/camera.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lazy_Change/qt_try.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lazy_Change/qt_try.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lazy_Change/try_cv.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +23,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/PyTunes" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1XicWvsVll4syf4HcQNq2771rz8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -29,7 +37,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/foglamp_workspace/foglamp-south-coral-people" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.qt_try">
+  <component name="RunManager" selected="Python.Lazy_Change">
     <configuration name="GUI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="open_vino_udacity" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -72,7 +80,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="lazy_change (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="gather_images" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="open_vino_udacity" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -80,11 +88,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lazy_change" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lazy_Change" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lazy_change/lazy_change.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lazy_Change/gather_images.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -137,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.qt_try" />
         <item itemvalue="Python.Lazy_Change" />
+        <item itemvalue="Python.qt_try" />
         <item itemvalue="Python.try_cv" />
+        <item itemvalue="Python.gather_images" />
         <item itemvalue="Python.GUI" />
-        <item itemvalue="Python.lazy_change (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -171,22 +179,22 @@
       <screen x="67" y="27" width="1293" height="637" />
     </state>
     <state x="496" y="103" width="424" height="484" key="FileChooserDialogImpl/67.27.1293.637@67.27.1293.637" timestamp="1581671864257" />
-    <state width="1270" height="140" key="GridCell.Tab.0.bottom" timestamp="1581874839693">
+    <state width="1247" height="140" key="GridCell.Tab.0.bottom" timestamp="1582145831297">
       <screen x="67" y="27" width="1293" height="637" />
     </state>
-    <state width="1270" height="140" key="GridCell.Tab.0.bottom/67.27.1293.637@67.27.1293.637" timestamp="1581874839693" />
-    <state width="1270" height="140" key="GridCell.Tab.0.center" timestamp="1581874839692">
+    <state width="1247" height="140" key="GridCell.Tab.0.bottom/67.27.1293.637@67.27.1293.637" timestamp="1582145831297" />
+    <state width="1247" height="140" key="GridCell.Tab.0.center" timestamp="1582145831296">
       <screen x="67" y="27" width="1293" height="637" />
     </state>
-    <state width="1270" height="140" key="GridCell.Tab.0.center/67.27.1293.637@67.27.1293.637" timestamp="1581874839692" />
-    <state width="1270" height="140" key="GridCell.Tab.0.left" timestamp="1581874839692">
+    <state width="1247" height="140" key="GridCell.Tab.0.center/67.27.1293.637@67.27.1293.637" timestamp="1582145831296" />
+    <state width="1247" height="140" key="GridCell.Tab.0.left" timestamp="1582145831296">
       <screen x="67" y="27" width="1293" height="637" />
     </state>
-    <state width="1270" height="140" key="GridCell.Tab.0.left/67.27.1293.637@67.27.1293.637" timestamp="1581874839692" />
-    <state width="1270" height="140" key="GridCell.Tab.0.right" timestamp="1581874839692">
+    <state width="1247" height="140" key="GridCell.Tab.0.left/67.27.1293.637@67.27.1293.637" timestamp="1582145831296" />
+    <state width="1247" height="140" key="GridCell.Tab.0.right" timestamp="1582145831297">
       <screen x="67" y="27" width="1293" height="637" />
     </state>
-    <state width="1270" height="140" key="GridCell.Tab.0.right/67.27.1293.637@67.27.1293.637" timestamp="1581874839692" />
+    <state width="1247" height="140" key="GridCell.Tab.0.right/67.27.1293.637@67.27.1293.637" timestamp="1582145831297" />
     <state width="1247" height="176" key="GridCell.Tab.1.bottom" timestamp="1581802432930">
       <screen x="67" y="27" width="1293" height="637" />
     </state>
@@ -211,16 +219,5 @@
       <screen x="67" y="27" width="1293" height="637" />
     </state>
     <state x="481" y="265" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1293.637@67.27.1293.637" timestamp="1581536517640" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Lazy_Change/GUI.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
