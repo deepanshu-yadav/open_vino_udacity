@@ -7,7 +7,7 @@
       <change beforePath="$PROJECT_DIR$/Lazy_Change/GUI.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Lazy_Change/Lazy_Change.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lazy_Change/Lazy_Change.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lazy_Change/camera.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lazy_Change/qt_try.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lazy_Change/qt_try.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lazy_Change/qt_try.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Lazy_Change/try_cv.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,22 +179,22 @@
       <screen x="67" y="27" width="1293" height="637" />
     </state>
     <state x="496" y="103" width="424" height="484" key="FileChooserDialogImpl/67.27.1293.637@67.27.1293.637" timestamp="1581671864257" />
-    <state width="1247" height="140" key="GridCell.Tab.0.bottom" timestamp="1582145831297">
+    <state width="1247" height="140" key="GridCell.Tab.0.bottom" timestamp="1582146070337">
       <screen x="67" y="27" width="1293" height="637" />
     </state>
-    <state width="1247" height="140" key="GridCell.Tab.0.bottom/67.27.1293.637@67.27.1293.637" timestamp="1582145831297" />
-    <state width="1247" height="140" key="GridCell.Tab.0.center" timestamp="1582145831296">
+    <state width="1247" height="140" key="GridCell.Tab.0.bottom/67.27.1293.637@67.27.1293.637" timestamp="1582146070337" />
+    <state width="1247" height="140" key="GridCell.Tab.0.center" timestamp="1582146070334">
       <screen x="67" y="27" width="1293" height="637" />
     </state>
-    <state width="1247" height="140" key="GridCell.Tab.0.center/67.27.1293.637@67.27.1293.637" timestamp="1582145831296" />
-    <state width="1247" height="140" key="GridCell.Tab.0.left" timestamp="1582145831296">
+    <state width="1247" height="140" key="GridCell.Tab.0.center/67.27.1293.637@67.27.1293.637" timestamp="1582146070334" />
+    <state width="1247" height="140" key="GridCell.Tab.0.left" timestamp="1582146070333">
       <screen x="67" y="27" width="1293" height="637" />
     </state>
-    <state width="1247" height="140" key="GridCell.Tab.0.left/67.27.1293.637@67.27.1293.637" timestamp="1582145831296" />
-    <state width="1247" height="140" key="GridCell.Tab.0.right" timestamp="1582145831297">
+    <state width="1247" height="140" key="GridCell.Tab.0.left/67.27.1293.637@67.27.1293.637" timestamp="1582146070333" />
+    <state width="1247" height="140" key="GridCell.Tab.0.right" timestamp="1582146070335">
       <screen x="67" y="27" width="1293" height="637" />
     </state>
-    <state width="1247" height="140" key="GridCell.Tab.0.right/67.27.1293.637@67.27.1293.637" timestamp="1582145831297" />
+    <state width="1247" height="140" key="GridCell.Tab.0.right/67.27.1293.637@67.27.1293.637" timestamp="1582146070335" />
     <state width="1247" height="176" key="GridCell.Tab.1.bottom" timestamp="1581802432930">
       <screen x="67" y="27" width="1293" height="637" />
     </state>
