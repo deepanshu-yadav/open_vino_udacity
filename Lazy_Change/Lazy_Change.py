@@ -92,7 +92,7 @@ class MyWindow(QMainWindow):
         self.player = QMediaPlayer()
         self.playlist = QMediaPlaylist()
         self.userAction = -1
-
+        self.ongoing_process = True
         self.inference = Inference()
         self.folder_chosen = False
         self.textbox = QTextEdit(self.central)
@@ -234,7 +234,7 @@ class MyWindow(QMainWindow):
         pass
 
     def handle_inference(self, result):
-        if self.folder_chosen == True:
+        if self.folder_chosen == True and self.ongoing_process == False:
             if result == 0:
                 self.pausehandler()
                 print('pause')
@@ -273,7 +273,7 @@ class MyWindow(QMainWindow):
 
     def openFile(self):
         song = QFileDialog.getOpenFileName(self, "Open Song", "~", "Sound Files (*.mp3 *.ogg *.wav *.m4a)")
-
+        self.ongoing_process = True
         if song[0] != '':
             url = QUrl.fromLocalFile(song[0])
             if self.playlist.mediaCount() == 0:
@@ -283,8 +283,10 @@ class MyWindow(QMainWindow):
                 self.userAction = 1
             else:
                 self.playlist.addMedia(QMediaContent(url))
+        self.ongoing_process = False
 
     def addFiles(self):
+        self.ongoing_process = True
         if self.playlist.mediaCount() != 0:
             self.folderIterator()
         else:
@@ -293,8 +295,10 @@ class MyWindow(QMainWindow):
             self.player.playlist().setCurrentIndex(0)
             self.player.play()
             self.userAction = 1
+        self.ongoing_process = False
 
     def folderIterator(self):
+        self.ongoing_process = True
         folderChosen = QFileDialog.getExistingDirectory(self, 'Open Music Folder', '~')
         if folderChosen != None:
             it = QDirIterator(folderChosen)
@@ -311,47 +315,64 @@ class MyWindow(QMainWindow):
                 if fInfo.suffix() in ('mp3', 'ogg', 'wav', 'm4a'):
                     self.playlist.addMedia(QMediaContent(QUrl.fromLocalFile(it.filePath())))
                     self.folder_chosen = True
+        self.ongoing_process = False
 
 
 
     def playhandler(self):
+        print('play', self.playlist.mediaCount())
+        self.ongoing_process = True
         if self.playlist.mediaCount() == 0:
             self.openFile()
         elif self.playlist.mediaCount() != 0:
             self.player.play()
             self.userAction = 1
+        self.ongoing_process = False
 
     def pausehandler(self):
+        self.ongoing_process = True
         self.userAction = 2
         self.player.pause()
+        self.ongoing_process = False
 
     def stophandler(self):
+        self.ongoing_process = True
+        print('stop', self.playlist.mediaCount())
         self.folder_chosen = False
         self.userAction = 0
         self.player.stop()
         self.playlist.clear()
         self.statusBar().showMessage("Stopped and cleared playlist")
+        self.ongoing_process = False
 
     def changeVolume(self, value):
         self.player.setVolume(value)
 
     def prevSong(self):
+        print( 'previous', self.playlist.mediaCount() )
+        self.ongoing_process = True
         if self.playlist.mediaCount() == 0:
             self.folder_chosen = False
             self.openFile()
         elif self.playlist.mediaCount() != 0:
             self.player.playlist().previous()
+        self.ongoing_process = False
 
     def shufflelist(self):
+        self.ongoing_process = True
         self.playlist.shuffle()
+        self.ongoing_process = False
 
     def nextSong(self):
+        print('next', self.playlist.mediaCount())
+        self.ongoing_process = True
         if self.playlist.mediaCount() == 0:
             self.folder_chosen = False
             self.openFile()
 
         elif self.playlist.mediaCount() != 0:
             self.player.playlist().next()
+        self.ongoing_process = False
 
     def songChanged(self, media):
         if not media.isNull():

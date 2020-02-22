@@ -31,8 +31,10 @@ class Inference:
 
         return image
 
-inf = Inference()
+#Usage
 
-image = cv2.imread('test_image.jpg')
-res = inf.perform_inference(image)
-print(res)
+# inf = Inference()
+#
+# image = cv2.imread('test_image.jpg')
+# res = inf.perform_inference(image)
+# print(res)
