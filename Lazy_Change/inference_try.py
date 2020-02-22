@@ -77,7 +77,7 @@ def perform_inference(exec_net, request_type, input_image, input_shape):
         exit(1)
 
     # Return the exec_net for testing purposes
-    print(output)
+    print(type(output))
     return output
 
 

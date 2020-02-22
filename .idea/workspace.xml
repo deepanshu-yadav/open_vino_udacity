@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db303993-9253-4744-801e-870bd0ab1cfc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lazy_Change/Lazy_Change.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lazy_Change/Lazy_Change.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lazy_Change/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lazy_Change/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lazy_Change/inference.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lazy_Change/inference.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lazy_Change/inference_try.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lazy_Change/inference_try.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,28 +40,7 @@
       <recent name="$PROJECT_DIR$/Lazy_Change" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Lazy_Change">
-    <configuration name="GUI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="open_vino_udacity" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lazy_Change" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lazy_Change/GUI.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.inference">
     <configuration name="Lazy_Change" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="open_vino_udacity" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,6 +75,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lazy_Change/gather_images.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="inference" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="open_vino_udacity" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lazy_Change" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lazy_Change/inference.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.inference" />
         <item itemvalue="Python.Lazy_Change" />
         <item itemvalue="Python.qt_try" />
         <item itemvalue="Python.try_cv" />
         <item itemvalue="Python.gather_images" />
-        <item itemvalue="Python.GUI" />
       </list>
     </recent_temporary>
   </component>
@@ -178,22 +182,22 @@
       <screen x="67" y="27" width="1293" height="637" />
     </state>
     <state x="496" y="103" width="424" height="484" key="FileChooserDialogImpl/67.27.1293.637@67.27.1293.637" timestamp="1581671864257" />
-    <state width="1270" height="176" key="GridCell.Tab.0.bottom" timestamp="1582376694751">
+    <state width="1270" height="140" key="GridCell.Tab.0.bottom" timestamp="1582386703569">
       <screen x="67" y="27" width="1293" height="637" />
     </state>
-    <state width="1270" height="176" key="GridCell.Tab.0.bottom/67.27.1293.637@67.27.1293.637" timestamp="1582376694751" />
-    <state width="1270" height="176" key="GridCell.Tab.0.center" timestamp="1582376694747">
+    <state width="1270" height="140" key="GridCell.Tab.0.bottom/67.27.1293.637@67.27.1293.637" timestamp="1582386703569" />
+    <state width="1270" height="140" key="GridCell.Tab.0.center" timestamp="1582386703566">
       <screen x="67" y="27" width="1293" height="637" />
     </state>
-    <state width="1270" height="176" key="GridCell.Tab.0.center/67.27.1293.637@67.27.1293.637" timestamp="1582376694747" />
-    <state width="1270" height="176" key="GridCell.Tab.0.left" timestamp="1582376694744">
+    <state width="1270" height="140" key="GridCell.Tab.0.center/67.27.1293.637@67.27.1293.637" timestamp="1582386703566" />
+    <state width="1270" height="140" key="GridCell.Tab.0.left" timestamp="1582386703565">
       <screen x="67" y="27" width="1293" height="637" />
     </state>
-    <state width="1270" height="176" key="GridCell.Tab.0.left/67.27.1293.637@67.27.1293.637" timestamp="1582376694744" />
-    <state width="1270" height="176" key="GridCell.Tab.0.right" timestamp="1582376694749">
+    <state width="1270" height="140" key="GridCell.Tab.0.left/67.27.1293.637@67.27.1293.637" timestamp="1582386703565" />
+    <state width="1270" height="140" key="GridCell.Tab.0.right" timestamp="1582386703568">
       <screen x="67" y="27" width="1293" height="637" />
     </state>
-    <state width="1270" height="176" key="GridCell.Tab.0.right/67.27.1293.637@67.27.1293.637" timestamp="1582376694749" />
+    <state width="1270" height="140" key="GridCell.Tab.0.right/67.27.1293.637@67.27.1293.637" timestamp="1582386703568" />
     <state width="1270" height="176" key="GridCell.Tab.1.bottom" timestamp="1582376694759">
       <screen x="67" y="27" width="1293" height="637" />
     </state>

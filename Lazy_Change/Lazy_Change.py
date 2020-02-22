@@ -93,7 +93,7 @@ class MyWindow(QMainWindow):
         self.playlist = QMediaPlaylist()
         self.userAction = -1
 
-        self.inference = Inference('abc')
+        self.inference = Inference()
         self.folder_chosen = False
         self.textbox = QTextEdit(self.central)
         self.textbox.setFont(TEXT_FONT)
@@ -168,8 +168,6 @@ class MyWindow(QMainWindow):
         self.statusBar()
         self.playlist.currentMediaChanged.connect(self.songChanged)
 
-
-
         self.mainMenu = self.menuBar()      # Menu bar
         exitAction = QAction('&Exit', self)
         exitAction.setShortcut('Ctrl+Q')
@@ -217,7 +215,14 @@ class MyWindow(QMainWindow):
         if scale > 1:
             img = cv2.resize(img, disp_size,
                              interpolation=cv2.INTER_CUBIC)
-            self.handle_inference( self.inference.perform_inference(img)  )
+
+            self.inference.perform_inference(img)
+            if self.inference.network.wait() == 0 :
+                result = self.inference.network.extract_output()
+                pred = np.argmax(result[0, :])
+                print(pred)
+                self.handle_inference(  pred  )
+
         qimg = QImage(img.data, disp_size[0], disp_size[1],
                       disp_bpl, IMG_FORMAT)
         display.setImage(qimg)
