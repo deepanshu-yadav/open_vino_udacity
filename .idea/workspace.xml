@@ -4,7 +4,6 @@
     <list default="true" id="db303993-9253-4744-801e-870bd0ab1cfc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lazy_Change/Lazy_Change.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lazy_Change/Lazy_Change.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lazy_Change/inference.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lazy_Change/inference.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +29,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lazy_Change" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -176,10 +175,10 @@
       <screen x="67" y="27" width="1293" height="637" />
     </state>
     <state x="171" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1293.637@67.27.1293.637" timestamp="1581533479016" />
-    <state x="496" y="103" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581671864257">
+    <state x="496" y="103" width="424" height="484" key="FileChooserDialogImpl" timestamp="1582452877446">
       <screen x="67" y="27" width="1293" height="637" />
     </state>
-    <state x="496" y="103" width="424" height="484" key="FileChooserDialogImpl/67.27.1293.637@67.27.1293.637" timestamp="1581671864257" />
+    <state x="496" y="103" width="424" height="484" key="FileChooserDialogImpl/67.27.1293.637@67.27.1293.637" timestamp="1582452877446" />
     <state width="1270" height="176" key="GridCell.Tab.0.bottom" timestamp="1582403883629">
       <screen x="67" y="27" width="1293" height="637" />
     </state>
@@ -220,51 +219,5 @@
       <screen x="67" y="27" width="1293" height="637" />
     </state>
     <state x="481" y="265" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1293.637@67.27.1293.637" timestamp="1581536517640" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Lazy_Change/Lazy_Change.py</url>
-          <line>322</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Lazy_Change/Lazy_Change.py</url>
-          <line>333</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Lazy_Change/Lazy_Change.py</url>
-          <line>339</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Lazy_Change/Lazy_Change.py</url>
-          <line>351</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Lazy_Change/Lazy_Change.py</url>
-          <line>366</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Lazy_Change/Lazy_Change.py</url>
-          <line>274</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Lazy_Change/Lazy_Change.py</url>
-          <line>289</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Lazy_Change/Lazy_Change.py</url>
-          <line>301</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

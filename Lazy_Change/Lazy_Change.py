@@ -26,7 +26,7 @@ except:
     import queue as Queue
 
 from inference import Inference
-
+from datetime import datetime
 IMG_SIZE    = 1280,720         # 640,480 or 1280,720 or 1920,1080
 IMG_FORMAT  = QImage.Format_RGB888
 DISP_SCALE  = 2                # Scaling factor for display image
@@ -92,7 +92,6 @@ class MyWindow(QMainWindow):
         self.player = QMediaPlayer()
         self.playlist = QMediaPlaylist()
         self.userAction = -1
-        self.ongoing_process = True
         self.inference = Inference()
         self.folder_chosen = False
         self.textbox = QTextEdit(self.central)
@@ -115,6 +114,7 @@ class MyWindow(QMainWindow):
         self.vlayout.addWidget(self.textbox)
 
         # TODO provision for allowing song to play
+        self.current_song_start_time = datetime.now()
 
         volumeslider = QSlider(Qt.Horizontal, self)
         volumeslider.setFocusPolicy(Qt.NoFocus)
@@ -233,8 +233,14 @@ class MyWindow(QMainWindow):
     def flush(self):
         pass
 
+    def check_song_is_playing(self):
+        if  (datetime.now()  - self.current_song_start_time ).seconds >= 7:
+            return False
+        else:
+            return True
     def handle_inference(self, result):
-        if self.folder_chosen == True and self.ongoing_process == False:
+        result = 4
+        if self.folder_chosen == True  and self.check_song_is_playing() == False:
             if result == 0:
                 self.pausehandler()
                 print('pause')
@@ -273,7 +279,6 @@ class MyWindow(QMainWindow):
 
     def openFile(self):
         song = QFileDialog.getOpenFileName(self, "Open Song", "~", "Sound Files (*.mp3 *.ogg *.wav *.m4a)")
-        self.ongoing_process = True
         if song[0] != '':
             url = QUrl.fromLocalFile(song[0])
             if self.playlist.mediaCount() == 0:
@@ -283,10 +288,9 @@ class MyWindow(QMainWindow):
                 self.userAction = 1
             else:
                 self.playlist.addMedia(QMediaContent(url))
-        self.ongoing_process = False
+
 
     def addFiles(self):
-        self.ongoing_process = True
         if self.playlist.mediaCount() != 0:
             self.folderIterator()
         else:
@@ -295,10 +299,8 @@ class MyWindow(QMainWindow):
             self.player.playlist().setCurrentIndex(0)
             self.player.play()
             self.userAction = 1
-        self.ongoing_process = False
 
     def folderIterator(self):
-        self.ongoing_process = True
         folderChosen = QFileDialog.getExistingDirectory(self, 'Open Music Folder', '~')
         if folderChosen != None:
             it = QDirIterator(folderChosen)
@@ -310,69 +312,62 @@ class MyWindow(QMainWindow):
                         self.playlist.addMedia(QMediaContent(QUrl.fromLocalFile(it.filePath())))
                         self.folder_chosen = True
                 it.next()
+            self.playlist.setPlaybackMode(QMediaPlaylist.Loop)
+
             if it.fileInfo().isDir() == False and it.filePath() != '.':
                 fInfo = it.fileInfo()
                 if fInfo.suffix() in ('mp3', 'ogg', 'wav', 'm4a'):
                     self.playlist.addMedia(QMediaContent(QUrl.fromLocalFile(it.filePath())))
                     self.folder_chosen = True
-        self.ongoing_process = False
 
 
 
     def playhandler(self):
-        print('play', self.playlist.mediaCount())
-        self.ongoing_process = True
         if self.playlist.mediaCount() == 0:
-            self.openFile()
+            self.folder_chosen = False
+            self.addFiles()
         elif self.playlist.mediaCount() != 0:
             self.player.play()
+            self.current_song_start_time = datetime.now()
+
             self.userAction = 1
-        self.ongoing_process = False
+
 
     def pausehandler(self):
-        self.ongoing_process = True
         self.userAction = 2
         self.player.pause()
-        self.ongoing_process = False
 
     def stophandler(self):
-        self.ongoing_process = True
-        print('stop', self.playlist.mediaCount())
         self.folder_chosen = False
         self.userAction = 0
         self.player.stop()
         self.playlist.clear()
         self.statusBar().showMessage("Stopped and cleared playlist")
-        self.ongoing_process = False
 
     def changeVolume(self, value):
         self.player.setVolume(value)
 
     def prevSong(self):
-        print( 'previous', self.playlist.mediaCount() )
-        self.ongoing_process = True
         if self.playlist.mediaCount() == 0:
             self.folder_chosen = False
-            self.openFile()
+            self.addFiles()
         elif self.playlist.mediaCount() != 0:
+            print(self.playlist.currentIndex(), 'jjlkjlj')
             self.player.playlist().previous()
-        self.ongoing_process = False
+            self.current_song_start_time = datetime.now()
 
     def shufflelist(self):
-        self.ongoing_process = True
         self.playlist.shuffle()
-        self.ongoing_process = False
+
 
     def nextSong(self):
-        print('next', self.playlist.mediaCount())
-        self.ongoing_process = True
         if self.playlist.mediaCount() == 0:
             self.folder_chosen = False
-            self.openFile()
+            self.addFiles()
 
         elif self.playlist.mediaCount() != 0:
             self.player.playlist().next()
-        self.ongoing_process = False
+            self.current_song_start_time = datetime.now()
 
     def songChanged(self, media):
         if not media.isNull():
