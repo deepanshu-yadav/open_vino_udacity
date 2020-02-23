@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db303993-9253-4744-801e-870bd0ab1cfc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/requirements-Lazy_Change.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lazy_Change/Lazy_Change.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lazy_Change/Lazy_Change.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

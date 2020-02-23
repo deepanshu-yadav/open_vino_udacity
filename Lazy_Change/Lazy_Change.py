@@ -1,25 +1,17 @@
 VERSION = "Change Songs through gesture v0.10"
 import sys, time, threading, cv2
 import numpy as np
-try:
-    from PyQt5.QtCore import Qt
-    pyqt5 = True
-except:
-    pyqt5 = False
-if pyqt5:
-    from PyQt5.QtCore import QTimer, QPoint, pyqtSignal
-    from PyQt5.QtWidgets import QApplication, QMainWindow, QTextEdit, QLabel
-    from PyQt5.QtWidgets import QWidget, QAction, QVBoxLayout, QHBoxLayout
-    from PyQt5.QtGui import QFont, QPainter, QImage, QTextCursor
-    from PyQt5.QtMultimedia import QMediaPlaylist, QMediaPlayer, QMediaContent
-    from PyQt5.QtCore import QUrl, QDirIterator
-    from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow, QPushButton, QFileDialog, QAction, QHBoxLayout, \
-        QVBoxLayout, QSlider
-else:
-    from PyQt4.QtCore import Qt, pyqtSignal, QTimer, QPoint
-    from PyQt4.QtGui import QApplication, QMainWindow, QTextEdit, QLabel
-    from PyQt4.QtGui import QWidget, QAction, QVBoxLayout, QHBoxLayout
-    from PyQt4.QtGui import QFont, QPainter, QImage, QTextCursor
+from PyQt5.QtCore import Qt
+
+from PyQt5.QtCore import QTimer, QPoint, pyqtSignal
+from PyQt5.QtWidgets import QApplication, QMainWindow, QTextEdit, QLabel
+from PyQt5.QtWidgets import QWidget, QAction, QVBoxLayout, QHBoxLayout
+from PyQt5.QtGui import QFont, QPainter, QImage, QTextCursor
+from PyQt5.QtMultimedia import QMediaPlaylist, QMediaPlayer, QMediaContent
+from PyQt5.QtCore import QUrl, QDirIterator
+from PyQt5.QtWidgets import QApplication, QWidget, QMainWindow, QPushButton, QFileDialog, QAction, QHBoxLayout, \
+    QVBoxLayout, QSlider
+
 try:
     import Queue as Queue
 except:
@@ -91,7 +83,6 @@ class MyWindow(QMainWindow):
 
         self.player = QMediaPlayer()
         self.playlist = QMediaPlaylist()
-        self.userAction = -1
         self.inference = Inference()
         self.folder_chosen = False
         self.textbox = QTextEdit(self.central)
@@ -114,6 +105,7 @@ class MyWindow(QMainWindow):
         self.vlayout.addWidget(self.textbox)
 
         # TODO provision for allowing song to play
+        # DONE
         self.current_song_start_time = datetime.now()
 
         volumeslider = QSlider(Qt.Horizontal, self)
@@ -220,7 +212,7 @@ class MyWindow(QMainWindow):
             if self.inference.network.wait() == 0 :
                 result = self.inference.network.extract_output()
                 pred = np.argmax(result[0, :])
-                print(pred)
+                #print(pred)
                 self.handle_inference(  pred  )
 
         qimg = QImage(img.data, disp_size[0], disp_size[1],
@@ -239,25 +231,20 @@ class MyWindow(QMainWindow):
         else:
             return True
     def handle_inference(self, result):
-        result = 4
         if self.folder_chosen == True  and self.check_song_is_playing() == False:
             if result == 0:
                 self.pausehandler()
-                print('pause')
             elif result == 1:
                 self.playhandler()
-                print('play')
             elif result == 2:
                 self.stophandler()
-                print('stop')
             elif result == 3 :
                 self.nextSong()
-                print('next')
             elif result == 4 :
                 self.prevSong()
-                print('previous')
             elif result == 5 :
-                print('nothing')
+                #print('nothing')
+                pass
 
     # Append to text display
     def append_text(self, text):
@@ -285,7 +272,6 @@ class MyWindow(QMainWindow):
                 self.playlist.addMedia(QMediaContent(url))
                 self.player.setPlaylist(self.playlist)
                 self.player.play()
-                self.userAction = 1
             else:
                 self.playlist.addMedia(QMediaContent(url))
 
@@ -298,7 +284,6 @@ class MyWindow(QMainWindow):
             self.player.setPlaylist(self.playlist)
             self.player.playlist().setCurrentIndex(0)
             self.player.play()
-            self.userAction = 1
 
     def folderIterator(self):
         folderChosen = QFileDialog.getExistingDirectory(self, 'Open Music Folder', '~')
@@ -330,18 +315,18 @@ class MyWindow(QMainWindow):
             self.player.play()
             self.current_song_start_time = datetime.now()
 
-            self.userAction = 1
+
 
 
     def pausehandler(self):
-        self.userAction = 2
+        print('Stopped and cleared playlist')
         self.player.pause()
 
     def stophandler(self):
         self.folder_chosen = False
-        self.userAction = 0
         self.player.stop()
         self.playlist.clear()
+        print('Stopped and cleared playlist')
         self.statusBar().showMessage("Stopped and cleared playlist")
 
     def changeVolume(self, value):
@@ -352,7 +337,6 @@ class MyWindow(QMainWindow):
             self.folder_chosen = False
             self.addFiles()
         elif self.playlist.mediaCount() != 0:
-            print(self.playlist.currentIndex(), 'jjlkjlj')
             self.player.playlist().previous()
             self.current_song_start_time = datetime.now()
 
@@ -372,6 +356,7 @@ class MyWindow(QMainWindow):
     def songChanged(self, media):
         if not media.isNull():
             url = media.canonicalUrl()
+            print('Now playing  ' +url.fileName())
             self.statusBar().showMessage(url.fileName())
 
 if __name__ == '__main__':
